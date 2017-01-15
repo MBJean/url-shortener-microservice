@@ -5,7 +5,7 @@ var express = require("express");
 var mongodb = require("mongodb");
 var shortid = require("shortid");
 var validUrl = require("valid-url");
-var config = require("config");
+var config = require("./config.js");
 
 // The MongoDB connection
 var mLab = "mongodb://" + config.db.host + "/" + config.db.name;
