@@ -74,6 +74,10 @@ app.get("/:short", function (req, res, next) {
 	});
 });
 
+app.get("/", function (req, res, next) {
+	res.send("This is a simple app that shortens URL and stores them in a database (MongoDB). Input a valid URL as a parameter of 'new/', and visit that URL via its shortcode by inputing it as a direct URL parameter.");
+});
+
 app.listen(app.get('port'), function() {
  console.log('Server started on localhost:' + app.get('port') + '; Press Ctrl-C to terminate.');
 });
